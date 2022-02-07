@@ -61,3 +61,5 @@ Pour ça on va essayer d'installer https://github.com/emacs-eaf/eaf-markdown-pre
     needed by spack.
     Set up of a git authentication token (have not yet understood why the token is writen
     in plain text in $HOME/.gitsomeconfig)
+*** 2022-02-04
+    Set up git client to cache personal authentication tokens.
