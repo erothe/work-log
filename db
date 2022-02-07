@@ -1,0 +1,63 @@
+#+TITLE: Worklog scitas for 2022
+#+AUTHOR: Eduardo Rothe
+#+DATE: 2022-01-10
+#+OPTIONS: num:nil
+#+SETUPFILE: /home/erothe/dev/markdown/org-mode/theme-readtheorg.setup
+
+* Major projects
+*** New SENV
+*** Gentoo prefix
+*** N-body problem
+* Minor projects
+*** cryoSPARC
+*** Python
+- Buy new notebook
+- Start a course
+- Pytest automation
+*** ReLiOn
+- Change package.py
+- cuda_arch=70
+- version('4.0', branch='ver4.0', ...)
+- pull request
+* Yet to start
+- It seems there nothing to start here...!
+* Weekly planning
+** Plan de la semaine
+**** Elaborer un plan pour la gestion des connaissances #SEMAINE EMACS
+Ce peut être l'élaboration de la doc en markdown.
+Cette doc doit être enregistré dans le github.
+Pour ça j'aimerais avoir un module pour visualisation de markdown en live sur emacs.
+Ça comprends débuter par la doc de emacs.
+Pour ça on va essayer d'installer https://github.com/emacs-eaf/eaf-markdown-previewer
+**** Spack
+     Écrire ce que je veux avoir fait à la fin de la semaine.
+     Installer spack-packagelist
+     Analyser les fichiers sous le répertoire /configuration
+     Proposer un changement
+     Écrire du code
+*** 2022-01-02
+     Install OS and the necessary software to start working
+     Set up a method to share the work I do while here at SCITAS
+     Set up emacs with org-mode and the exporter facility
+*** 2022-02-02
+     Création d'une partition /work pour utilisation commun à plusieurs SO.
+     Lecture sur les commandes fdisk, parted, blkid, lsblk and mkfs
+     Installation de spack pour la gestion du sw en local
+     Discussion avec Daniel pour le remplacement dans le cours introduction aux clusters et lecture des slides
+     Suivi des incidents en cours
+*** 2022-02-03
+    Installation d'un environnement python3 générique
+    Lancement de spack-packagelist et configuration de syrah.yaml pour mon poste
+    Rejout d'un environnement phoenix
+    Reprise du ticket INC0461359 - incompatibilité entre GROMACS et la lib `hwloc`
+    Debug de senv.py:
+        spack env create phoenix
+        senv --input syrah.yaml create-env --env phoenix
+*** 2022-02-04
+    Start to develop. Write a class to deal with the read and write of yaml and jinja files.
+    Play with a simple dictionary at first and then move to read it from an YAML file.
+    Write a simple Jinja file and render it, both on screen (for debug mode) and to a file.
+    Understand variable substitution under a jinja template. Move on to the bigger files
+    needed by spack.
+    Set up of a git authentication token (have not yet understood why the token is writen
+    in plain text in $HOME/.gitsomeconfig)
